@@ -1,97 +1,76 @@
-<Dropdowns>
-    <select id="select">
-        <option selected value="SPEEDGRADER">SpeedGrader</option>
-    </select>
-</Dropdowns>
-<td colspan="1"></td>
-    <hr>
-<h2>Assignment Name</h2>
-<form id="assignment">
-    <label for="assignment-name"></label>
-    <input type="text" id="assignment-name" placeholder="AN" value="A1 - ENV + HTML" style="margin-bottom: 20px;"/></br>
-    <label for="assignment-description"></label>
-    <textarea id="assignment-description" placeholder="AD" style="width: 100%; height: 60px; margin-bottom: 20px;">This is the assignment description.</textarea></br>
-    
-    Points</br>
-    <label for="assignment-point"></label>
-    <input type="text" id="assignment-point" placeholder="AP" value="100" style="margin-bottom: 20px;"/></br>
-    
-    Assignment Group</br>
-    <Dropdowns>
-        <select id="select-assignment" style="margin-bottom: 20px;">
-            <option selected value="ASSIGNMENTS">ASSIGNMENTS</option>
-        </select>
-    </Dropdowns></br>
-    
-    Display Grade as</br>
-    <Dropdowns>
-        <select id="grade-display" style="margin-bottom: 20px;">
-            <option selected value="PERCENTAGE">Percentage</option>
-        </select>
-    </Dropdowns></br>
-
-    Submission Type</br>
-    <Dropdowns>
-        <select id="type-submission" style="margin-bottom: 20px;">
-            <option selected value="SUBMISSION TYPE">Online</option>
-        </select>
-    </Dropdowns></br>
-
-    Submission Attempts</br>
-    <Dropdowns>
-        <select id="attempt-submission" style="margin-bottom: 20px;">
-            <option selected value="1">1</option>
-        </select>
-    </Dropdowns></br>
-
-    Plagiarism Review</br>
-    <Dropdowns>
-        <select id="plagiarism-review" style="margin-bottom: 20px;">
-            <option selected value="PASSED">Passed</option>
-        </select>
-    </Dropdowns></br>
-
-    Online Entry Options</br>
-    <input type="checkbox" value="TEXT ENTRY" name="online-entry-options" id="chkbox-text">
-    <label for="chkbox-text">Text Entry</label></br>
-    <input type="checkbox" value="WEBSITE URL" name="online-entry-options" id="chkbox-website">
-    <label for="chkbox-website">Website URL</label></br>
-    <input type="checkbox" value="MEDIA RECORDINGS" name="online-entry-options" id="chkbox-media">
-    <label for="chkbox-media">Media Recordings</label></br>
-    <input type="checkbox" value="STUDENT ANNOTATION" name="online-entry-options" id="chkbox-annotation">
-    <label for="chkbox-annotation">Student Annotation</label></br>
-    <input type="checkbox" value="FILE UPLOADS" name="online-entry-options" id="chkbox-uploads" style="margin-bottom: 20px;">
-    <label for="chkbox-uploads">File Uploads</label></br>
-
-    Group Assignments</br>
-    <input type="checkbox" value="SOLO" name="group-assignment" id="chkbox-solo">
-    <label for="chkbox-solo">Solo</label></br>
-    <input type="checkbox" value="TEAM" name="group-assignment" id="chkbox-team" style="margin-bottom: 20px;">
-    <label for="chkbox-team">Team</label></br>
-
-    Peer Reviews</br>
-    <input type="checkbox" value="COMPLETED" name="peer-reviews" id="reviews-complete">
-    <label for="reviews-complete">Completed</label></br>
-    <input type="checkbox" value="INCOMPLETE" name="peer-reviews" id="reviews-incomplete" style="margin-bottom: 20px;">
-    <label for="reviews-incomplete">Incomplete</label></br>
-
-    Assign</br>
-    Assign to</br>
-    <label for="assign-to"></label>
-    <input type="text" id="assign-to" placeholder="AT" value="Everyone" style="margin-bottom: 20px;"></br>
-
-    Due</br>
-    <label for="assignment-due"></label>
-    <input type="date" id="assignment-due" value="2021-01-01" style="margin-bottom: 20px;"></br>
-
-    Available from</br>
-    <label for="available-from"></label>
-    <input type="date", id="available-from" value="2021-01-01" style="margin-bottom: 20px;"></br>
-
-    Until</br>
-    <label for="available-until"></label>
-    <input type="date" id="available-until" value="2021-01-01" style="margin-bottom: 20px;"></br>
-
-    <button><a href="/Kanbas/Courses/Assignments/screen.html">Cancel</a></button>
-    <button><a href="/Kanbas/Courses/Assignments/screen.html">Save</a></button>
-</form>
+<table>
+    <thead></thead>
+    <tbody>
+        <td style="vertical-align: top;">
+            <form action="/Kanbas/Courses/Assignments/screen.html">
+                <select>
+                  <option>Speed Grader</option>
+                </select>
+                <hr/>
+                <h2>Assignment Name</h2>
+                <input value="A1 - ENV + HTML" />
+                <br />
+                <br />
+                <textarea>This is the assignment description.</textarea>
+                <br />
+                <br />
+                <label for="points">Points</label><br />
+                <input id="points" value="100" />
+                <br />
+                <br />
+                <label>Assignment Group</label><br />
+                <select>
+                  <option>ASSIGNMENT</option>
+                  <option>QUIZ</option>
+                  <option>EXAM</option>
+                  <option>PROJECT</option>
+                </select>
+                <br />
+                <br />
+                <label>Display Grade as</label><br />
+                <select>
+                  <option>Percentage</option>
+                  <option>Actual</option>
+                  <option>Letter Grade</option>
+                </select>
+                <br />
+                <br />
+                <label>Submission Type</label><br />
+                <select>
+                    <option>Online</option>
+                    <option>Hard Copy</option>
+                  </select>
+                  <br />
+                  <br />
+                <label>Online Entry Options</label><br />
+                <label
+                  ><input type="checkbox" name="online-entry-options" />Text
+                  Entry</label
+                ><br />
+                <input type="checkbox" name="online-entry-options" />Website
+                URL<br />
+                <input type="checkbox" name="online-entry-options" />Media
+                Recordings<br />
+                <input type="checkbox" name="online-entry-options" />Student
+                Annotations<br />
+                <input type="checkbox" name="online-entry-options" />Files
+                Uploads<br />
+                <br />
+                <label>Assign</label><br />
+                <label>Assign to</label><br />
+                <input id="points" value="Everyone" />
+                <br />
+                <br />
+                <label>Due Date</label><br />
+                <input type="date" value="2021-01-01" /><br />
+                <br />
+                <label>Available from</label><br />
+                <input type="date" value="2021-01-01" /><br /><br />
+                <label>Until</label><br />
+                <input type="date" value="2021-01-01" /><br /><br />
+                <button><a href="/Kanbas/Courses/Assignments/screen.html">Cancel</a></button>
+                <button><a href="/Kanbas/Courses/Assignments/screen.html">Save</a></button>
+            </form>
+        </td>
+    </tbody>
+</table>
