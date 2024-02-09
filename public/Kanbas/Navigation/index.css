@@ -1,0 +1,38 @@
+.wd-kanbas-navigation {
+    background-color: black;
+    list-style: none;
+    padding: 0px;
+    margin: px;
+    width: 85px;
+    font-family: sans-serif;
+    text-align: center;
+    height: 100%;
+}
+.wd-kanvas-navigation li {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    text-align: center;
+}
+.wd-kanbas-navigation li.wd-active {
+    background-color: white;
+}
+.wd-kanbas-navigation li.wd-active a {
+    color: #D41B2C;
+}
+.wd-kanbas-navigation a {
+    color: white;
+    text-decoration: none;
+}
+.wd-kanbas-navigation a i {
+    color: #D41B2C;
+    font-size: 2em;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+.wd-kanbas-navigation img {
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+    line-height: 1;
+}

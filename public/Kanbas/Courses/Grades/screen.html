@@ -1,238 +1,282 @@
-<table>
-    <tbody>
-        <tr>
-            <td style="vertical-align: top;">
-                <ul>
-                    <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                    <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                    <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                    <li><a href="/Kanbas/Calendar/index.html">Calendar</a></li>
-                    <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-                    <li><a href="/Kanbas/History/index.html">History</a></li>
-                    <li><a href="/Kanbas/Studio/index.html">Studio</a></li>
-                    <li><a href="/Kanbas/Commons/index.html">Commons</a></li>
-                    <li><a href="/Kanbas/Help/index.html">Help</a></li>
-                </ul>    
-            </td>
-            <td style="vertical-align: top;">
-                <ul>
-                    <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                    <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-                    <li><a href="/Kanbas/Courses/Piazza/index.html">Piazza</a></li>
-                    <li><a href="/Kanbas/Courses/Zoom Meetings/index.html">Zoom Meetings</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-                    <li><a href="/Kanbas/Courses/Quizzes/index.html">Quizzes</a></li>
-                    <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                    <li><a href="/Kanbas/Courses/People/index.html">People</a></li>
-                    <li><a href="/Kanbas/Courses/Panopto Video/index.html">Panopto Video</a></li>
-                    <li><a href="/Kanbas/Courses/Discussions/index.html">Discussions</a></li>
-                    <li><a href="/Kanbas/Courses/Announcements/index.html">Announcements</a></li>
-                    <li><a href="/Kanbas/Courses/Pages/screen.html">Pages</a></li>
-                    <li><a href="/Kanbas/Courses/Files/index.html">Files</a></li>
-                    <li><a href="/Kanbas/Courses/Rubrics/index.html">Rubrics</a></li>
-                    <li><a href="/Kanbas/Courses/Outcomes/index.html">Outcomes</a></li>
-                    <li><a href="/Kanbas/Courses/Collaborations/index.html">Collaborations</a></li>
-                    <li><a href="/Kanbas/Courses/Syllabus/index.html">Syllabus</a></li>
-                    <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a></li>
-                </ul>
-            </td>
-            <td style="vertical-align: top;">
-                <Dropdowns></Dropdowns>
-                <select id="grade-book">
-                    <option selected value="GRADEBOOK">Gradebook</option>
-                </select>
-                <button style="margin-left: 3px;">Import</button>
-                <select id="export">
-                    <option selected value="EXPORT">Export</option>
-                </select>
-                <button style="margin-left: 3px;">Configure</button>
-                
-                <h2>Student Names</h2>
-                <form id="search">
-                    <label for="search-students"></label>
-                    <input id="search-students" placeholder="Search Students"/><br/>
-                </form>
-                <h2>Assignment Names</h2>
-                <form id="search">
-                    <label for="search-assignments"></label>
-                    <input id="search-assignments" placeholder="Search Assignment">
-                </form>
-                <button style="margin-bottom: 15px;">Apply Filters</button>
-                
-                <table border="1" width="100%">
-                    <thead>
-                    <tr>
-                        <th>Student Name</th>
-                        <th>A1 SETUP Out of 100</th>
-                        <th>A2 HTML Out of 100</th>
-                        <th>A3 CSS Out of 100</th>
-                        <th>A4 BOOTSTRAP Out of 100</th>
-                        <th>A5 JAVASCRIPT Out of 100</th>
-                        <th>A6 REACT Out of 100</th>
-                        <th>A7 REDUX Out of 100</th>
-                        <th>A8 NODE Out of 100</th>
-                        <th>A9 MONGO Out of 100</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Alice Wonderland</td>
-                        <td style="text-align: center; vertical-align: middle;">98</td>
-                        <td style="text-align: center; vertical-align: middle;">89</td>
-                        <td style="text-align: center; vertical-align: middle;">87</td>
-                        <td style="text-align: center; vertical-align: middle;">90</td>
-                        <td style="text-align: center; vertical-align: middle;">89</td>
-                        <td style="text-align: center; vertical-align: middle;">94</td>
-                        <td style="text-align: center; vertical-align: middle;">88</td>
-                        <td style="text-align: center; vertical-align: middle;">87</td>
-                        <td style="text-align: center; vertical-align: middle;">100</td>
-                    </tr>
-                    <tr>
-                        <td>Princes Leia</td>
-                        <td style="text-align: center; vertical-align: middle;">98</td>
-                        <td style="text-align: center; vertical-align: middle;">80</td>
-                        <td style="text-align: center; vertical-align: middle;">87</td>
-                        <td style="text-align: center; vertical-align: middle;">86</td>
-                        <td style="text-align: center; vertical-align: middle;">100</td>
-                        <td style="text-align: center; vertical-align: middle;">94</td>
-                        <td style="text-align: center; vertical-align: middle;">
-                            <input type="number" value="85" style="width: 40px; height: 20px; text-align: center;"/><br/></td>        
-                        <td style="text-align: center; vertical-align: middle;">84</td>
-                        <td style="text-align: center; vertical-align: middle;">92</td>
-                    </tr>
-                    <tr>
-                        <td>Luke Skywalker</td>
-                        <td style="text-align: center; vertical-align: middle;">
-                            <input type="number" value="99" style="width: 40px; height: 20px; text-align: center;"/><br/></td>
-                        <td style="text-align: center; vertical-align: middle;">88</td>
-                        <td style="text-align: center; vertical-align: middle;">97</td>
-                        <td style="text-align: center; vertical-align: middle;">82</td>
-                        <td style="text-align: center; vertical-align: middle;">96</td>
-                        <td style="text-align: center; vertical-align: middle;">93</td>
-                        <td style="text-align: center; vertical-align: middle;">95</td>        
-                        <td style="text-align: center; vertical-align: middle;">100</td>
-                        <td style="text-align: center; vertical-align: middle;">93</td>
-                    </tr>
-                    <tr>
-                        <td>Han Solo</td>
-                        <td style="text-align: center; vertical-align: middle;">83</td>
-                        <td style="text-align: center; vertical-align: middle;">99</td>
-                        <td style="text-align: center; vertical-align: middle;">94</td>
-                        <td style="text-align: center; vertical-align: middle;">98</td>
-                        <td style="text-align: center; vertical-align: middle;">86</td>
-                        <td style="text-align: center; vertical-align: middle;">85</td>
-                        <td style="text-align: center; vertical-align: middle;">
-                            <input type="number" value="86" style="width: 40px; height: 20px; text-align: center;"/><br/></td>        
-                        <td style="text-align: center; vertical-align: middle;">80</td>
-                        <td style="text-align: center; vertical-align: middle;">84</td>
-                    </tr>
-                    <tr>
-                        <td>Lando Calresian</td>
-                        <td style="text-align: center; vertical-align: middle;">83</td>
-                        <td style="text-align: center; vertical-align: middle;">
-                            <input type="number" value="92" style="width: 40px; height: 20px; text-align: center;"/><br/></td>
-                        <td style="text-align: center; vertical-align: middle;">80</td>
-                        <td style="text-align: center; vertical-align: middle;">80</td>
-                        <td style="text-align: center; vertical-align: middle;">92</td>
-                        <td style="text-align: center; vertical-align: middle;">92</td>
-                        <td style="text-align: center; vertical-align: middle;">94</td>        
-                        <td style="text-align: center; vertical-align: middle;">87</td>
-                        <td style="text-align: center; vertical-align: middle;">95</td>
-                    </tr>
-                    <tr>
-                        <td>Boba Fet</td>
-                        <td style="text-align: center; vertical-align: middle;">85</td>
-                        <td style="text-align: center; vertical-align: middle;">89</td>
-                        <td style="text-align: center; vertical-align: middle;">94</td>
-                        <td style="text-align: center; vertical-align: middle;">83</td>
-                        <td style="text-align: center; vertical-align: middle;">83</td>
-                        <td style="text-align: center; vertical-align: middle;">84</td>
-                        <td style="text-align: center; vertical-align: middle;">91</td>        
-                        <td style="text-align: center; vertical-align: middle;">87</td>
-                        <td style="text-align: center; vertical-align: middle;">96</td>
-                    </tr>
-                    <tr>
-                        <td>Darth Vader</td>
-                        <td style="text-align: center; vertical-align: middle;">81</td>
-                        <td style="text-align: center; vertical-align: middle;">81</td>
-                        <td style="text-align: center; vertical-align: middle;">
-                            <input type="number" value="96" style="width: 40px; height: 20px; text-align: center;"/><br/></td>
-                        <td style="text-align: center; vertical-align: middle;">80</td>
-                        <td style="text-align: center; vertical-align: middle;">89</td>
-                        <td style="text-align: center; vertical-align: middle;">88</td>
-                        <td style="text-align: center; vertical-align: middle;">82</td>        
-                        <td style="text-align: center; vertical-align: middle;">80</td>
-                        <td style="text-align: center; vertical-align: middle;">82</td>
-                    </tr>
-                    <tr>
-                        <td>Obi-Wan Kenobi</td>
-                        <td style="text-align: center; vertical-align: middle;">
-                            <input type="number" value="85" style="width: 40px; height: 20px; text-align: center;"/><br/></td>
-                        <td style="text-align: center; vertical-align: middle;">99</td>
-                        <td style="text-align: center; vertical-align: middle;">87</td>
-                        <td style="text-align: center; vertical-align: middle;">82</td>
-                        <td style="text-align: center; vertical-align: middle;">88</td>
-                        <td style="text-align: center; vertical-align: middle;">83</td>
-                        <td style="text-align: center; vertical-align: middle;">88</td>        
-                        <td style="text-align: center; vertical-align: middle;">92</td>
-                        <td style="text-align: center; vertical-align: middle;">80</td>
-                    </tr>
-                    <tr>
-                        <td>R2-D2</td>
-                        <td style="text-align: center; vertical-align: middle;">81</td>
-                        <td style="text-align: center; vertical-align: middle;">
-                            <input type="number" value="92" style="width: 40px; height: 20px; text-align: center;"/><br/></td>
-                        <td style="text-align: center; vertical-align: middle;">
-                            <input type="number" value="82" style="width: 40px; height: 20px; text-align: center;"/><br/></td>
-                        <td style="text-align: center; vertical-align: middle;">86</td>
-                        <td style="text-align: center; vertical-align: middle;">83</td>
-                        <td style="text-align: center; vertical-align: middle;">
-                            <input type="number" value="84" style="width: 40px; height: 20px; text-align: center;"/><br/></td>
-                        <td style="text-align: center; vertical-align: middle;">98</td>        
-                        <td style="text-align: center; vertical-align: middle;">85</td>
-                        <td style="text-align: center; vertical-align: middle;">96</td>
-                    </tr>
-                    <tr>
-                        <td>C-3PO</td>
-                        <td style="text-align: center; vertical-align: middle;">94</td>
-                        <td style="text-align: center; vertical-align: middle;">98</td>
-                        <td style="text-align: center; vertical-align: middle;">83</td>
-                        <td style="text-align: center; vertical-align: middle;">83</td>
-                        <td style="text-align: center; vertical-align: middle;">100</td>
-                        <td style="text-align: center; vertical-align: middle;">96</td>
-                        <td style="text-align: center; vertical-align: middle;">96</td>        
-                        <td style="text-align: center; vertical-align: middle;">85</td>
-                        <td style="text-align: center; vertical-align: middle;">87</td>
-                    </tr>
-                    <tr>
-                        <td>Yoda</td>
-                        <td style="text-align: center; vertical-align: middle;">80</td>
-                        <td style="text-align: center; vertical-align: middle;">89</td>
-                        <td style="text-align: center; vertical-align: middle;">99</td>
-                        <td style="text-align: center; vertical-align: middle;">89</td>
-                        <td style="text-align: center; vertical-align: middle;">96</td>
-                        <td style="text-align: center; vertical-align: middle;">85</td>
-                        <td style="text-align: center; vertical-align: middle;">96</td>        
-                        <td style="text-align: center; vertical-align: middle;">92</td>
-                        <td style="text-align: center; vertical-align: middle;">85</td>
-                    </tr>
-                    <tr>
-                        <td>Obi-Wan Kenobi</td>
-                        <td style="text-align: center; vertical-align: middle;">82</td>
-                        <td style="text-align: center; vertical-align: middle;">88</td>
-                        <td style="text-align: center; vertical-align: middle;">95</td>
-                        <td style="text-align: center; vertical-align: middle;">100</td>
-                        <td style="text-align: center; vertical-align: middle;">
-                            <input type="number" value="93" style="width: 40px; height: 20px; text-align: center;"/><br/></td>
-                        <td style="text-align: center; vertical-align: middle;">98</td>
-                        <td style="text-align: center; vertical-align: middle;">85</td>        
-                        <td style="text-align: center; vertical-align: middle;">87</td>
-                        <td style="text-align: center; vertical-align: middle;">99</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<html>
 
+<head>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css">
+    <link rel="stylesheet" href="/Kanbas/Courses/Grades/index.css">
+</head>
+
+<body>
+    <div class="d-flex" style="height: 100%;">
+        <div>
+            <ul class="wd-kanbas-navigation">
+                <li><a href="http://northeastern.edu">
+                        <img src="/images/logo.jpg"></a></li>
+                <li><a href="/Kanbas/Account/Profile/screen.html">
+                        <i class="fa fa-user-circle-o"></i>Account</a></li>
+                <li>
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa fa-tachometer"></i>Dashboard</a>
+                </li>
+                <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fa fa-book"></i>Courses</a></li>
+                <li><a href="/Kanbas/Calendar/index.html"><i class="fa fa-calendar"></i>Calendar</a></li>
+                <li><a href="/Kanbas/Inbox/index.html">
+                        <i class="fa fa-inbox"></i><br>Inbox</a></li>
+                <li><a href="/Kanbas/History/index.html">
+                        <i class="fa fa-clock-o"></i><br>History</a></li>
+                <li><a href="/Kanbas/Studio/index.html">
+                        <i class="fa fa-usb"></i>Studio</a></li>
+                <li><a href="/Kanbas/Commons/index.html">
+                        <i class="fa fa-arrow-circle-right"></i>Commons</a></li>
+                <li><a href="/Kanbas/Help/index.html">
+                        <i class="fa fa-question-circle-o"></i><br>Help</a></li>
+            </ul>
+        </div>
+
+        <div class="d-flex col">
+            <div class="container-fluid flex-grow-1">
+                <div class="d-flex flex-row align-items-center">
+                    <i class="fa fa-bars fa-1x me-3 bars-red"></i>
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item" style="text-decoration: none; color: D41B2C; ">
+                                CS5610.36915.202430</li>
+                            <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                        </ol>
+                    </nav>
+                </div>
+                <hr>
+                <div class="d-flex flex-row">
+                    <div class="d-flex flex-column">
+                        <span style="font-style: italic;" class="ellipsis mb-2">
+                            202430_2_Spring 2024 Semester
+                        </span>
+                        <ul class="wd-navigation">
+                            <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                            <li><a href="/Kanbas/Courses/Home/screen.html">Modules</a></li>
+                            <li><a href="http://piazza.com">Piazza</a></li>
+                            <li><a href="/Kanbas/Courses/Zoom Meetings/index.html">Zoom Meetings</a></li>
+                            <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                            <li><a href="/Kanbas/Courses/Quizzes/index.html">Quizzes</a></li>
+                            <li class="wd-active">
+                                <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
+                            </li>
+                            <li><a href="/Kanbas/Courses/People/index.html">People</a></li>
+                            <li><a href="/Kanbas/Courses/Panopto Video/index.html">Panopto Video</a></li>
+                            <li><a href="/Kanbas/Courses/Discussions/index.html">Discussions</a></li>
+                            <li><a href="/Kanbas/Courses/Announcements/index.html">Announcements</a></li>
+                            <li><a href="/Kanbas/Courses/Pages/screen.html">Pages</a></li>
+                            <li><a href="/Kanbas/Courses/Files/index.html">Files</a></li>
+                            <li><a href="/Kanbas/Courses/Rubrics/index.html">Rubrics</a></li>
+                            <li><a href="/Kanbas/Courses/Outcomes/index.html">Outcomes</a></li>
+                            <li><a href="/Kanbas/Courses/Collaborations/index.html">Collaborations</a></li>
+                            <li><a href="/Kanbas/Courses/Syllabus/index.html">Syllabus</a></li>
+                            <li><a href="/Kanbas/Courses/Settings/CourseDetails/index.html">Settings</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="container-fluid d-flex flex-column mx-4">
+                        <div class="d-flex flex-row align-items-center ms-auto mb-3">
+                            <button>
+                                <i class="fa fa-mail-forward"></i>
+                                Import
+                            </button>
+                            <div class="select-icon-wrapper">
+                                <i class="fa fa-mail-reply select-icon"></i>
+                                <select>
+                                    <option selected>Export</option>
+                                    <option value="option1">Delete</option>
+                                    <option value="option2">All</option>
+                                    <option value="option3">Restore</option>
+                                </select>
+                            </div>                            
+                            <button>
+                                <i class="fa fa-cog"></i>
+                            </button>
+                        </div>
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="student-names" class="form-label">
+                                        <h6>Student Names</h6>
+                                    </label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-transparent">
+                                            <i class="fa fa-search"></i>
+                                        </span>
+                                        <input type="text" class="form-select border-start-0" name="student-names"
+                                            id="student-names" placeholder="Search Students">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <label for="assignment-names" class="form-label">
+                                        <h6>Assignment Names</h6>
+                                    </label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-transparent">
+                                            <i class="fa fa-search"></i>
+                                        </span>
+                                        <input type="text" class="form-select border-start-0" name="assignment-names"
+                                            id="assignment-names" placeholder="Search Assignments">
+                                    </div>
+                                </div>
+                            </div>
+                            <button>
+                                <i class="fa fa-filter"></i>
+                                Apply Filters
+                            </button>
+                        </form>
+                        <div class>
+                            <table class="table table-striped table-hover table-bordered align-middle">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="fw-medium text-center align-middle">Student Name</th>
+                                        <th scope="col" class="fw-normal text-center align-middle">
+                                            <div class="d-flex flex-column">
+                                                <span>A1 SETUP</span>
+                                                <span class="column-subtitle">Out of 100</span>
+                                            </div>
+                                        </th>
+                                        <th scope="col" class="fw-normal text-center align-middle">
+                                            <div class="d-flex flex-column">
+                                                <span>A2 HTML</span>
+                                                <span class="column-subtitle">Out of 100</span>
+                                            </div>
+                                        </th>
+                                        <th scope="col" class="fw-normal text-center align-middle">
+                                            <div class="d-flex flex-column">
+                                                <span>A3 CSS</span>
+                                                <span class="column-subtitle">Out of 100</span>
+                                            </div>
+                                        </th>
+                                        <th scope="col" class="fw-normal text-center align-middle">
+                                            <div class="d-flex flex-column">
+                                                <span>A4 BOOTSTRAP</span>
+                                                <span class="column-subtitle">Out of 100</span>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            Doxa Asibey
+                                        </th>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>89.59%</td>
+                                        <td>98.65%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Thuy Tien Bui
+                                        </th>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>
+                                            <div class="d-flex flex-row">
+                                                <input type="text" class="form-control form-control-sm focus-red me-1"
+                                                    value="91.5%">
+                                                <button class="btn btn-light p-1">
+                                                    <i class="fa fa-sign-out"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Yetong Chen
+                                        </th>
+                                        <td>100%</td>
+                                        <td>97%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Zhenyu Chen
+                                        </th>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Yung-Shin Chien</a>
+                                        </th>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Basil Coughlan
+                                        </th>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>99.32%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Rachel Dao
+                                        </th>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Lana Do
+                                        </th>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Kartikey Dwivedi</a>
+                                        </th>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Jiarong Feng
+                                        </th>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Saurabh Sunil Gade
+                                        </th>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

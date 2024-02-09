@@ -1,60 +1,115 @@
-<table>
-    <tbody>
-        <tr>
-            <td style="vertical-align: top;">
-                <ul>
-                    <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                    <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                    <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                    <li><a href="/Kanbas/Calendar/index.html">Calendar</a></li>
-                    <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-                    <li><a href="/Kanbas/History/index.html">History</a></li>
-                    <li><a href="/Kanbas/Studio/index.html">Studio</a></li>
-                    <li><a href="/Kanbas/Commons/index.html">Commons</a></li>
-                    <li><a href="/Kanbas/Help/index.html">Help</a></li>
-                </ul>    
-            </td>
-            <td style="vertical-align: top;">
-                <ul>
-                    <li><a href="#">Notifications</a></li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">ePortfolios</a></li>
-                    <li><a href="#">Shared Content</a></li>
-                    <li><a href="#">The Hub</a></li>
-                    <li><a href="#">Qwickly Course Tools</a></li>
-                    <li><a href="#">Global Announcements</a></li>
-                </ul>
-            </td>
-            <td style="vertical-align: top;">
-                <table>
-                    Jose Annunziato's Profile
-                    <tr>
-                        <td colspan="2">
-                            <hr>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h2>Jose Annunziato</h2>
-                            <h3>Contact</h3>
-                            No registered services, you can add some on the <a href="#">settings</a> page.
-                            <h3>Biography</h3>
-                            Faculty, Software Engineer, AI, Space, and renewable enthusiast.
-                            <h3>Links</h3>
-                            <a href="#">YouTube</a>
-                        </td>
-                        <td style="vertical-align: top;">
-                            <button>
-                                <img src="pencil-icon.jpg" alt="Edit" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 5px;">
-                                <a href="/Kanbas/Account/Profile/Edit/screen.html">Edit Profile</a></button>            
-                        </td>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<html>
 
+<head>
+        <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="/Kanbas/styles.css" />
+        <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css">
+        <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css">
+</head>
+
+<body>
+        <div class="d-flex" style="height: 100%;">
+                <div>
+                        <ul class="wd-kanbas-navigation">
+                                <li><a href="http://northeastern.edu">
+                                                <img src="/images/logo.jpg"></a></li>
+                                <li class="wd-active"><a href="/Kanbas/Account/Profile/screen.html">
+                                                <i class="fa fa-user-circle-o"></i>Account</a></li>
+                                <li><a href="/Kanbas/Dashboard/screen.html">
+                                                <i class="fa fa-tachometer"></i>Dashboard</a>
+                                </li>
+                                <li><a href="/Kanbas/Courses/Home/screen.html">
+                                                <i class="fa fa-book"></i>Courses</a></li>
+                                <li><a href="/Kanbas/Calendar/index.html"><i class="fa fa-calendar"></i>Calendar</a>
+                                </li>
+                                <li><a href="/Kanbas/Inbox/index.html">
+                                                <i class="fa fa-inbox"></i><br>Inbox</a></li>
+                                <li><a href="/Kanbas/History/index.html">
+                                                <i class="fa fa-clock-o"></i><br>History</a></li>
+                                <li><a href="/Kanbas/Studio/index.html">
+                                                <i class="fa fa-usb"></i>Studio</a></li>
+                                <li><a href="/Kanbas/Commons/index.html">
+                                                <i class="fa fa-arrow-circle-right"></i>Commons</a></li>
+                                <li><a href="/Kanbas/Help/index.html">
+                                                <i class="fa fa-question-circle-o"></i><br>Help</a></li>
+                        </ul>
+                </div>
+                <div class="d-flex flex-row">
+                        <div class="page-content-wrapper">
+                                <div class="container-fluid">
+                                        <span class="d-flex flex-row align-items-center">
+                                                <h2>
+                                                        <i class="fa fa-bars fa-1x me-4"></i>
+                                                        Jose Annunziato's Profile
+                                                </h2>
+                                        </span>
+                                        <hr>
+                                        <div class="d-flex">
+                                                <ul class="wd-navigation">
+                                                        <li><a href="#">Notifications</a>
+                                                        </li>
+                                                        <li class="wd-active"><a
+                                                                        href="/Kanbas/Account/Profile/screen.html">Profile</a>
+                                                        </li>
+                                                        <li><a href="#">Files</a></li>
+                                                        <li><a href="#">Settings</a></li>
+                                                        <li><a href="#">ePortfolios</a>
+                                                        </li>
+                                                        <li><a href="#">Shared Content</a></li>
+                                                        <li><a href="#">The Hub</a>
+                                                        </li>
+                                                        <li><a href="#">Qwuickly Course
+                                                                        Tools</a></li>
+                                                        <li><a href="#">Global
+                                                                        Announcements</a></li>
+                                                </ul>
+                                                <div class="d-flex flex-column ms-4">
+                                                        <div>
+                                                                <div class="me-auto">
+                                                                        <span class="fa-stack fa-3x mb-3">
+                                                                                <i
+                                                                                        class="fa fa-user-circle-o fa-stack-2x"></i>
+                                                                        </span>
+                                                                        <div class="float-end">
+                                                                                <a href="/Kanbas/Account/Profile/Edit/screen.html"
+                                                                                        class="btn btn-primary"
+                                                                                        style="background-color: lightgrey; color: black;">
+                                                                                        <i
+                                                                                                class="fa fa-pencil fa-flip-horizontal"></i>
+                                                                                        Edit Profile
+                                                                                </a>
+                                                                        </div>
+                                                                        <h2 class="mb-5">Jose Annunziato
+                                                                        </h2>
+                                                                </div>
+
+                                                        </div>
+                                                        <div class="mb-4 profile-section">
+                                                                <h3>Contact</h3>
+                                                                No registered services, you can add some on the
+                                                                <a href="#" style="color: #D41B2C;">settings</a>
+                                                                page.
+                                                        </div>
+                                                        <div class="mb-4 profile-section">
+                                                                <h3>Biography</h3>
+                                                                Faculty, Software Engineer, AI, Space, and renewables
+                                                                enthusiast.
+                                                        </div>
+                                                        <div class="mb-4 profile-section">
+                                                                <h3>Links</h3>
+                                                                <a href="#">
+                                                                        <i class="fa fa-link" style="color: black;"></i>
+                                                                        <span style="color: #D41B2C;">YouTube</span>
+                                                                </a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+</body>
+
+</html>

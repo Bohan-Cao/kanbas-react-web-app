@@ -1,0 +1,38 @@
+button {
+    background-color: lightgray !important;
+    color: black;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: thin;
+    height: 30px;
+}
+
+.table tbody th {
+    color: #D41B2C; 
+    font-weight: 500;
+}
+
+.select-icon-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.select-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+select {
+    background-color: lightgray !important;
+    border-radius: 5px;
+    padding-left: 30px;
+    border: thin;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none;
+    height: 30px;
+    margin-right: 10px;
+}

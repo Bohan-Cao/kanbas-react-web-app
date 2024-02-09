@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+.course-info {
+    text-align: center;
+    flex-grow: 1; /* Ensures it takes up the available space between the icons */
+}
+
+.menu-icon {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+
+.modal {
+    display: none;
+}
+
+:target {
+    display: block;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+}
+
+:target {
+    display: block;
+    color: #000;
+}
