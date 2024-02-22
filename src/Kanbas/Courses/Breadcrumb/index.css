@@ -1,0 +1,13 @@
+.wd-breadcrumb-nav {
+    --bs-breadcrumb-divider: '>';
+}
+
+.wd-breadcrumb-nav {
+    color: #D41B2C;
+    padding-left: 25px;
+    height: 20px;
+}
+
+.wd-breadcrumb-nav .active{
+    color: black;
+}

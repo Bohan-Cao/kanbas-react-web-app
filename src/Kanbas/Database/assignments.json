@@ -1,0 +1,8 @@
+[
+  { "_id": "A101", "title": "A1 - ENV HTML", "course": "RS101" },
+  { "_id": "A102", "title": "A2 - CSS + BOOTSTRAP", "course": "RS101" },
+  { "_id": "A103", "title": "A3 - JS + REACT", "course": "RS101" },
+  { "_id": "A104", "title": "A4 - STATE + REDUX", "course": "RS101" },
+  { "_id": "A105", "title": "A5 - NODE + SESSION", "course": "RS101" },
+  { "_id": "A106", "title": "A6 - MONGO", "course": "RS101" }
+]

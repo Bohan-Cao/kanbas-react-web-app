@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "RS101",
+    "name": "CS5001 Foundations of CS",
+    "number": "RS4550",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "intensivefoundations.png"
+  },
+  {
+    "_id": "RS102",
+    "name": "CS5002 Discrete Structures",
+    "number": "RS4560",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "discretestructures.jpeg"
+  },
+  {
+    "_id": "RS103",
+    "name": "CS5610 Web Developemnt",
+    "number": "RS4570",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "webdevelopment.jpg"
+  }
+]

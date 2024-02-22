@@ -1,0 +1,69 @@
+.wd-modules,
+.wd-modules * {
+    border-radius: 0%;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wd-modules {
+    margin: 30px;
+}
+
+.wd-modules > li {
+    background-color: lightgray;
+    border: 1px solid gray !important;
+    border-left: none !important;
+    padding: 12px;
+}
+
+.wd-modules > li > div {
+    padding: 10px;
+    border-left: 1px solid gray !important;
+}
+
+.wd-modules > li > ul > li {
+    padding: 5px;
+    border-top: 1px solid gray !important;
+    border-left: 2px solid green;
+}
+
+.wd-modules > li {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: lightgray;
+    margin-right: 5px;
+    border-radius: 3px;
+    border: 0.5px solid;
+    margin-bottom: 3px;
+}
+
+select {
+    background-color: lightgray;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 0.5px solid;
+    margin-bottom: 3px;
+}
+
+.student-view-btn {
+    background-color: lightgray;
+    height: 30px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border: 1px solid;
+    border-radius: 2px; /* Slightly rounded corners for the button */
+    display: inline-flex; /* Aligns the icon and text properly */
+    align-items: center; /* Centers the items vertically */
+    justify-content: center; /* Centers the items horizontally */
+    text-decoration: none; /* Removes underline from links if any */
+    margin-right: 15px; /* Keeps your right margin */
+    margin-top: 8px;
+}

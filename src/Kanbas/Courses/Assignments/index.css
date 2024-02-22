@@ -1,0 +1,16 @@
+.assignment-item-title a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.assignment-item {
+    padding: 5px;
+    border-top: 1px solid gray !important;
+    border-left: 2px solid green;
+}
+.assignment-item i {
+    color: green;
+}
+.assignment-item .fa-solid.fa-ellipsis-vertical {
+    color: black;
+}
