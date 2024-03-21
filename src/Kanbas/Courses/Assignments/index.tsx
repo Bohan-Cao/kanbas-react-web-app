@@ -1,15 +1,22 @@
-import React from "react";
-import { FaCheckCircle, FaEllipsisV, FaPlus, FaPlusCircle } from "react-icons/fa";
+import "./index.css";
+import React, { useState } from "react";
+import { FaCheckCircle, FaEllipsisV, FaPlus, FaPlusCircle, FaTimes, FaWindowMinimize } from "react-icons/fa";
+import { GiNotebook } from "react-icons/gi";
+import { MdArrowDropDown } from "react-icons/md";
+import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { assignments } from "../../Database";
-import "./index.css";
-import { MdArrowDropDown } from "react-icons/md";
-import { GiNotebook } from "react-icons/gi";
+import { AssignmentState } from "../../store";
+import { deleteAssignment } from "./assignmentsReducer";
 
 function Assignments() {
+    const dispatch = useDispatch();
     const { courseId } = useParams();
-    const assignmentList = assignments.filter(
+    const assignmentLists = useSelector((state: AssignmentState) => state.assignmentsReducer.assignments);
+    console.log(assignmentLists)
+    const assignmentList = assignmentLists.filter(
         (assignment) => assignment.course === courseId);
+        
     return (
         <>
             <div className="flex-fill">
@@ -20,10 +27,12 @@ function Assignments() {
                             <FaPlus />
                             Group
                         </button>
-                        <button className="btn btn-danger px-3 d-flex align-items-center me-2">
-                            <FaPlus />
-                            <span className="ms-2">Assignment</span>
-                        </button>
+                        <Link to={`/Kanbas/Courses/${courseId}/Assignments/${new Date().getTime().toString()}`} style={{ textDecoration: 'none' }}>
+                            <button className="btn btn-danger px-3 d-flex align-items-center me-2">
+                                <FaPlus />
+                                <span className="ms-2">Assignment</span>
+                            </button>
+                        </Link>
                         <button className="btn btn-light btn-outline-secondary px-3">
                             <FaEllipsisV />
                         </button>
@@ -41,7 +50,9 @@ function Assignments() {
                                         40% of total
                                     </span>
                                     <FaCheckCircle className="text-success" />
-                                    <FaPlusCircle className="ms-2" />
+                                    <Link to={`/Kanbas/Courses/${courseId}/Assignments/${new Date().getTime().toString()}`} style={{ 'color': 'black' }}>
+                                        <FaPlusCircle className="ms-2" />
+                                    </Link>
                                     <FaEllipsisV className="ms-2" />
                                 </span>
                             </div>
@@ -60,7 +71,13 @@ function Assignments() {
                                         </div>
                                         <div>
                                             <FaCheckCircle className="text-success" />
+                                            <FaTimes className="text-red-400" onClick={() => {
+                                                if (window.confirm('Confirm you want to remove the assignment?')) {
+                                                    dispatch(deleteAssignment(assignment._id))
+                                                }
+                                            }} />
                                             <FaEllipsisV className="ms-2" />
+
                                         </div>
                                     </li>
                                 ))}

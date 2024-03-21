@@ -67,3 +67,18 @@ select {
     margin-right: 15px; /* Keeps your right margin */
     margin-top: 8px;
 }
+
+.module-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.module-name-input, .module-description-textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: lightgray; /* Consistent with your button styling */
+    border: 0.5px solid; /* Consistent with your button styling */
+    border-radius: 3px; /* Slightly rounded to match your button styling */
+    padding: 5px; /* Padding for better text spacing */
+}

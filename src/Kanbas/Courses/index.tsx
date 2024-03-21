@@ -1,16 +1,16 @@
-import { courses } from "../Database";
-import { Navigate, Route, Routes, useParams } from "react-router-dom";
-import { HiMiniBars3 } from "react-icons/hi2";
-import CourseNavigation from "./Navigation";
-import Modules from "./Modules";
-import Breadcrumb from "./Breadcrumb";
-import { FaGlasses } from "react-icons/fa";
-import Home from "./Home";
-import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/Editor";
+import Assignments from "./Assignments";
+import Breadcrumb from "./Breadcrumb";
+import CourseNavigation from "./Navigation";
 import Grades from "./Grades";
+import Home from "./Home";
+import Modules from "./Modules";
+import { FaGlasses } from "react-icons/fa";
+import { HiMiniBars3 } from "react-icons/hi2";
+import { Navigate, Route, Routes, useParams } from "react-router-dom";
+import { courses } from "../Database";
 
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
     const { courseId } = useParams();
     const course = courses.find((course) => course._id === courseId);
 
